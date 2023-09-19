@@ -1,0 +1,36 @@
+
+export const name = 'hybrid-browser'
+export const version = '1.0.6'
+export const dependencies = {
+  "@derhuerst/gemini": "^1.3.0",
+  "@helia/unixfs": "^1.3.0",
+  "abort-controller": "^3.0.0",
+  "blockstore-fs": "^1.1.3",
+  "create-desktop-shortcuts": "^1.7.0",
+  "data-uri-to-buffer": "^3.0.1",
+  "datastore-fs": "^9.1.2",
+  "decompress": "^4.2.1",
+  "delay": "^6.0.0",
+  "detect-port": "^1.5.1",
+  "electron-extended-webextensions": "github:ducksandgoats/electron-extended-WebExtensions",
+  "fs-extra": "^9.0.1",
+  "gemini-to-html": "^1.0.0",
+  "get-urls": "^11.0.0",
+  "gopher-lib": "^0.2.0",
+  "gun": "^0.2020.1239",
+  "helia": "^1.3.2",
+  "http-proxy-agent": "^6.1.0",
+  "hyper-sdk": "^4.2.5",
+  "mime": "^2.6.0",
+  "multiformats": "^9.9.0",
+  "node-fetch": "^3.3.1",
+  "range-parser": "^1.2.1",
+  "rc": "^1.2.8",
+  "sanitize-filename": "^1.6.3",
+  "scoped-fs": "^1.4.1",
+  "socks-proxy-agent": "^8.0.1",
+  "streamx": "^2.13.2",
+  "torrentz": "^14.0.6",
+  "whatwg-mimetype": "https://github.com/jsdom/whatwg-mimetype#v2.3.0",
+  "wrtc": "^0.4.7"
+}
