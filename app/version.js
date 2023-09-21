@@ -1,6 +1,6 @@
 
 export const name = 'hybrid-browser'
-export const version = '1.0.6'
+export const version = '2.0.0'
 export const dependencies = {
   "@derhuerst/gemini": "^1.3.0",
   "@helia/unixfs": "^1.3.0",

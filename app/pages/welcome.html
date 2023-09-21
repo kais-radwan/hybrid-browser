@@ -123,30 +123,6 @@ Hybrid
 		hyper://
 	</a>
 </p>
-<hr/>
-<p>
-	<a href="https://github.com/ducksandgoats/list-fetch/blob/main/README.md">
-		bt doc
-	</a>
-	<a href="https://github.com/ducksandgoats/chunk-fetch/blob/default/README.md">
-		ipfs doc
-	</a>
-	<a href="https://github.com/ducksandgoats/log-fetch/blob/master/README.md">
-		hyper doc
-	</a>
-</p>
-
-<p id="testPara">click one of the buttons</p>
-<p>
-	<span><button style="margin: 2px 2px;" type="button" onclick="makeVid('tor')">tor://</button></span>
-	<span><button style="margin: 2px 2px;" type="button" onclick="makeVid('iip')">iip://</button></span>
-	<span><button style="margin: 2px 2px;" type="button" onclick="makeVid('lok')">lok://</button></span>
-	<span><button style="margin: 2px 2px;" type="button" onclick="makeVid('bt')">bt://</button></span>
-	<span><button style="margin: 2px 2px;" type="button" onclick="makeVid('ipfs')">ipfs://</button></span>
-	<span><button style="margin: 2px 2px;" type="button" onclick="makeVid('hyper')">hyper://</button></span>
-</p>
-
-<p id="paraTest"><span id="vidTest">video will load here</span></p>
 
 <footer id="version">
 
@@ -164,34 +140,4 @@ document.querySelector('#version').innerText = version
 }
 
 load()
-
-function makeVid(data){
-	if(!document.getElementById("testVid")){
-		document.getElementById('vidTest').remove()
-		const testElement = document.createElement('video')
-		testElement.setAttribute('id', 'testVid')
-		document.getElementById('paraTest').appendChild(testElement)
-		document.getElementById("testPara").innerText = 'enjoy the video'
-	}
-	const testTheElement = document.getElementById("testVid")
-	if (data === 'tor') {
-		testTheElement.setAttribute('controls', '')
-		testTheElement.src = 'tor://dp7tumztlzkl7lbc3l77zxvuc4owxhdlpokc6ukoad6xwa4nyb7bobad.onion/home.mp4'
-	} else if (data === 'iip') {
-		testTheElement.setAttribute('controls', '')
-		testTheElement.src = 'iip://4o662divzn4qc2wmhdb5ha73extnhknli67kemsqut6y52fzhsgq.b32.i2p/home.mp4'
-	} else if (data === 'lok') {
-		testTheElement.setAttribute('controls', '')
-		testTheElement.src = 'lok://474nc5td8ggoydmati7n4ujorq1iaokk4icyjycp7p4munsn8y4o.loki/home.mp4'
-	} else if (data === 'bt') {
-		testTheElement.setAttribute('controls', '')
-		testTheElement.src = 'bt://597da77c025afc039eed6d495e4c282efcf76ca618d58b8e8a956ab0ae7ffbb7/home.mp4'
-	} else if (data === 'ipfs') {
-		testTheElement.setAttribute('controls', '')
-		testTheElement.src = 'ipfs://bafybeick4akdstkdftvrqgk7zjtj4avnxw7zclpni3eekgxgou27idf5v4/home.mp4'
-	} else if (data === 'hyper') {
-		testTheElement.setAttribute('controls', '')
-		testTheElement.src = 'hyper://3c68c7d50769d10ff35b1f4814579e5550172c543fcb7849ecb5d609b00b54ca/home.mp4'
-	}
-}
 </script>
