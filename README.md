@@ -36,7 +36,7 @@ test
 </html>
 ```
 
-with with hybrid, you can do the same AND MORE like the following
+With hybrid, you can do the same AND MORE like the following
 
 ```
 <html>
