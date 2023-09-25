@@ -1,6 +1,6 @@
 export default async function makeHyperFetch (opts = {}) {
     const {default: mime} = await import('mime/lite.js')
-    const parseRange = await import('range-parser')
+    const {default: parseRange} = await import('range-parser')
     const { Readable, pipelinePromise } = await import('streamx')
     const path = await import('path')
     const DEFAULT_OPTS = {timeout: 30000}

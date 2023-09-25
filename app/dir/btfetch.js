@@ -1,6 +1,6 @@
 export default async function makeBTFetch (opts = {}) {
     const {default: mime} = await import('mime/lite.js')
-    const parseRange = await import('range-parser')
+    const {default: parseRange} = await import('range-parser')
     const path = await import('path')
     const DEFAULT_OPTS = {timeout: 30000}
     const finalOpts = { ...DEFAULT_OPTS, ...opts }

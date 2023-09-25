@@ -1,6 +1,6 @@
 export default async function makeIPFSFetch (opts = {}) {
     const { CID } = await import('multiformats/cid')
-    const parseRange = await import('range-parser')
+    const {default: parseRange} = await import('range-parser')
     const {default: mime} = await import('mime/lite.js')
     const { Readable } = await import('streamx')
     const path = await import('path')
