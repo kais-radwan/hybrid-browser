@@ -154,7 +154,7 @@ export default async function makeIPFSFetch (opts = {}) {
               const useLink = `ipfs://${path.join(mainCid, usePath).replace(/\\/g, "/")}`
               const isRanged = reqHeaders.has('Range') || reqHeaders.has('range')
               if (isRanged) {
-                const ranges = parseRange(mainData.fileSize, reqHeaders.get('Range') || reqHeaders.get('range'))
+                const ranges = parseRange(Number(mainData.fileSize), reqHeaders.get('Range') || reqHeaders.get('range'))
                 if (ranges && ranges.length && ranges.type === 'bytes') {
                   const [{ start, end }] = ranges
                   const length = (end - start + 1)
